@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    line-height: 1.6;
+    background-color: #e4e4e4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: none;
+    color: #000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #0070f3;
+}
+
+
+.button {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.translate-button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+main {
+    width: 80%; 
+    max-width: 1200px; 
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.presentacion {
+    background-color: #000;
+}
+
+.intro {
+    font-size: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.ps5-image {
+    width: 500px;
+}
+
+.intro-text h1,
+h2,
+h3 {
+    margin-bottom: 1rem;
+}
+
+.pre-ord {
+    font-size: 27.5px;
+    text-align: center;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.pre-order button {
+    background-color: #0073e6;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.preordenar {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 0.5 0.5;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.event {
+    width: 80%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.texto {
+    font-size: 20px;
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+
+.limitado {
+    font-style: italic;
+}
+
+
+.event-info {
+    font-size: 48px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+
+.event-detail {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+
+
+.asistencia {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 0.5 0.5;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.confirm {
+    margin-top: 1;
+    text-align: center;
+}
+
+.confirm-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    background-color: #000;
+        width: 80%;
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 2rem;
+}
+
+.confirm-info img {
+    width: 300px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.otro {
+    background-color: #000;
+}
+
+.datos {
+    font-size: 18px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+footer {
+    color: rgb(0, 0, 0);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer p {
+    padding: 2rem 2rem;
+    border: none;
+    background-color: #000;
+    color: #fff
+}
+
+
+@media (max-width: 720px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .logo span {
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .intro {
+        font-size: 28px; 
+        flex-direction: column; 
+        padding: 1rem;
+    }
+
+    .ps5-image {
+        width: 100%; 
+        max-width: 300px; 
+    }
+
+    .pre-ord {
+        font-size: 22px;
+    }
+
+    .event-info {
+        font-size: 24px; 
+        flex-direction: column;
+    }
+
+    .event {
+        width: 95%; 
+        padding: 1rem; 
+    }
+
+    .texto {
+        font-size: 16px;
+    }
+
+    .confirm-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .confirm-info img {
+        width: 80%; 
+        max-width: 250px; 
+    }
+
+    footer .footer-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    footer p {
+        padding: 1rem;
+    }
+}
